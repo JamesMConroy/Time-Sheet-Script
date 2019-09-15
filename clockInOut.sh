@@ -15,3 +15,6 @@ fi
 # Insert output to the head of the file
 echo "Clock $STATUS $TIME
 $(cat $1)" > $1
+
+# Print the top of the file to confirm correct data printed
+head -n3 $1
